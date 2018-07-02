@@ -34,7 +34,7 @@ It's noticable that one line changed to `push('6LdLf2AUAAAAAKeDRmM6lGRzZsG4U0Vap
 I searched for vulnerability and I came to the following conclusions.  
 If `render` parameter:
 - contains any `alphanumeric` character making `site-key` invalid, the line in the code will change back to `push('onload')`
-- after removing all `non-alphanumeric` characters (from the range `[a-zA-Z0-9]`) contains a valid `site-key` it will be approved and the line will consist of all the characters.
+- after removing all `non-alphanumeric` characters (from the range `[^a-zA-Z0-9]`) contains a valid `site-key` it will be approved and the line will consist of all the characters.
 
 As for example, if we pass `6LdLf2AUAAAAAKeDRmM6lGRzZsG4U0VapHMPVqRM');[][][][];('` as a `render` parameter the code will contain `push('6LdLf2AUAAAAAKeDRmM6lGRzZsG4U0VapHMPVqRM');[][][][];('');`
 
