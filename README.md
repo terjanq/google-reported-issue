@@ -59,7 +59,7 @@ Content-Security-Policy:
   frame-src 'self' https://www.google.com/recaptcha/;
 ```
 
-which only allows scripts to be loaded from `http://xyz.example.com/scripts`, `https://www.gstatic.com/recaptcha/` and `https://www.google.com/recaptcha/`. The latter two are needed in order to make `reCAPTCHA` work.
+which only allows scripts to be loaded from `http://xyz.example.com/scripts/`, `https://www.gstatic.com/recaptcha/` and `https://www.google.com/recaptcha/`. The latter two are needed in order to make `reCAPTCHA` work.
 
 
 Even though the website `http://xyz.example.com/` was not vulnerable to the `XSS Injection` itself there was a mistake made by trusting `reCAPTCHA` being safe to use.
