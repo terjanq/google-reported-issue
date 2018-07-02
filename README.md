@@ -1,7 +1,7 @@
 # Improper parameter sanitization
 
 ## Prolog
-I recently discovered that `site-key` parameter in `Google reCAPTCHA` application is improperly verified and then sanitized. Therefore it allows an attacker to insert any `JavasSript` code onto `https://google.com/recaptcha` domain and thus use it to bypass `Content Security Policy` on the website using `Google reCAPTCHA` authentication tool. I also believe that there is a high risk of `XSS Injection` possibility due to my finding.
+I recently discovered that `site-key` parameter in `Google reCAPTCHA` application is improperly verified and then sanitized. Therefore it allows an attacker to insert any `JavasSript` code onto `https://google.com/recaptcha` domain and thus use it to bypass `Content Security Policy` on the website using `Google reCAPTCHA` authentication tool. I also believe that there is a high risk of `XSS Injection` due to my finding.
 
 ## Documentation
 From the [docummentation](https://developers.google.com/recaptcha/docs/invisible) we can read that `api.js` file allows three parameters to be provided:
