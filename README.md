@@ -49,7 +49,7 @@ resulting with the following code:
 
 ## Attack scenario
 Suppose we have a website `https://xyz.example.com` with **creating notes** as a major functionality. Each user has his own account and creates either public or private notes. The website offers set of `scripts`, hosted on their website, which users can attach into their notes (for example animated winter theme). 
-At the same time, the website `https://xyz.example.com` **ensures** that the user data is safe and that no `XSS Injection` can be done on their website. But unluckily the website uses `Google reCAPTCHA` tool as a defense against bots. The header `Content-Security-Policy` intended to prevent from XSS is set to:
+At the same time, the website `https://xyz.example.com` **ensures** that the user data is safe and that no `XSS Injection` can be done on their website. But unluckily the website uses `Google reCAPTCHA` tool as a defense against bots. The header `Content-Security-Policy` intended to prevent from `XSS` is set to:
 
 ```
 Content-Security-Policy: 
