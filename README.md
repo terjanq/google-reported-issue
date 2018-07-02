@@ -83,4 +83,4 @@ If we look into the source code then we can once again notice successfuly inject
 
 ![another_injection.png](another_injection.png)
 
-But this time it's on the `HTML` page not on the page with `text/javascript` *MIME* type. But here, I was unsuccessful with attaching working `JavaScript` code.
+But this time it's on the `HTML` page not on the page with `text/javascript` *MIME* type. But here, I was unsuccessful with attaching a working `JavaScript` code.
