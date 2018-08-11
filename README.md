@@ -86,7 +86,5 @@ If we look into the source code then we can once again notice successfuly inject
 But this time it's on the page with `text/html` *MIME type* not with `text/javascript` *MIME* type as in before which creates a serious risk of `XSS Injection`.
 
 ## Summary
-I've spent some time in finding the working `XSS` but was unsuccessful in there. I also had reported the **issue** to Google via `Bug Bounty` program, but sadly the finding hasn't been rewarded. Even though it got patched really quickly with the highest priority :(
-
-
+I've spent some time in finding the working `XSS` but was unsuccessful in there. I also had reported the **issue** to Google via `Bug Bounty` program, but sadly the finding hasn't been rewarded.
 
